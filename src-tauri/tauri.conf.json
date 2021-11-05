@@ -1,6 +1,6 @@
 {
   "package": {
-    "productName": "svelte-app",
+    "productName": "fanya",
     "version": "0.1.0"
   },
   "build": {
@@ -56,7 +56,7 @@
     },
     "windows": [
       {
-        "title": "svelte-app",
+        "title": "Fanya",
         "width": 800,
         "height": 600,
         "resizable": true,
