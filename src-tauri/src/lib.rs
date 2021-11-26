@@ -1,19 +1,28 @@
-#[macro_use] extern crate diesel;
+#[macro_use]
+extern crate diesel;
 
-pub mod schema;
+pub mod commands;
 pub mod models;
+pub mod schema;
 
 use diesel::prelude::*;
 use dotenv::dotenv;
-use std::env;
+use std::{env, fs, io::Error, path::PathBuf};
+use tauri::api::path;
 
 use self::models::Task;
 
-pub fn establish_connection() -> SqliteConnection {
-    dotenv().ok();
+pub fn establish_connection() -> Result<SqliteConnection, Error> {
+  dotenv().ok();
 
-    let database_url = env::var("DATABASE_URL").expect("DATABASE_URL must be set");
+  let mut path: PathBuf = path::config_dir().unwrap();
+  path.push("fanya");
+  fs::create_dir_all(&path)?;
+  path.push(env::var("DATABASE_URL").unwrap_or("fanya.db".into()));
+
+  let database_url = path.to_str().unwrap();
+  Ok(
     SqliteConnection::establish(&database_url)
-        .unwrap_or_else(|_| panic!("Error connecting to {}", database_url))
+      .unwrap_or_else(|_| panic!("Error connecting to {}", database_url)),
+  )
 }
-

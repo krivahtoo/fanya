@@ -10,10 +10,27 @@
     "beforeBuildCommand": ""
   },
   "tauri": {
+    "cli": {
+      "description": "Manage your //TODOs",
+      "afterHelp": "Licence under MIT",
+      "args": [
+        {
+          "name": "version",
+          "short": "v",
+          "description": "Print program version"
+        },
+        {
+          "name": "verbose",
+          "short": "V",
+          "description": "Print debug info",
+          "multipleOccurrences": true
+        }
+      ]
+    },
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "com.github.krivahtoo.fanya",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -23,10 +40,10 @@
       ],
       "resources": [],
       "externalBin": [],
-      "copyright": "",
-      "category": "DeveloperTool",
-      "shortDescription": "",
-      "longDescription": "",
+      "copyright": "MIT",
+      "category": "Productivity",
+      "shortDescription": "Manage your //TODOs",
+      "longDescription": "A task management app",
       "deb": {
         "depends": [],
         "useBootstrapper": false
