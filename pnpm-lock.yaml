@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@fortawesome/free-solid-svg-icons': ^5.15.4
+  '@fortawesome/free-solid-svg-icons': 5.15.4
   '@rollup/plugin-commonjs': 17.1.0
   '@rollup/plugin-node-resolve': 11.2.1
   '@tauri-apps/api': 1.0.0-beta.8
