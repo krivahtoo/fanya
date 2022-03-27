@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@fortawesome/free-solid-svg-icons': ^5.15.4
-  '@rollup/plugin-commonjs': 17.1.0
+  '@rollup/plugin-commonjs': 21.0.3
   '@rollup/plugin-node-resolve': 11.2.1
   '@tauri-apps/api': 1.0.0-beta.8
   '@tauri-apps/cli': 1.0.0-beta.10
@@ -32,7 +32,7 @@ dependencies:
 
 devDependencies:
   '@fortawesome/free-solid-svg-icons': 5.15.4
-  '@rollup/plugin-commonjs': 17.1.0_rollup@2.66.1
+  '@rollup/plugin-commonjs': 21.0.3_rollup@2.66.1
   '@rollup/plugin-node-resolve': 11.2.1_rollup@2.66.1
   '@tauri-apps/cli': 1.0.0-beta.10
   autoprefixer: 10.4.2_postcss@8.4.5
@@ -112,11 +112,11 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@rollup/plugin-commonjs/17.1.0_rollup@2.66.1:
-    resolution: {integrity: sha512-PoMdXCw0ZyvjpCMT5aV4nkL0QywxP29sODQsSGeDpr/oI49Qq9tRtAsb/LbYbDzFlOydVEqHmmZWFtXJEAX9ew==}
+  /@rollup/plugin-commonjs/21.0.3_rollup@2.66.1:
+    resolution: {integrity: sha512-ThGfwyvcLc6cfP/MWxA5ACF+LZCvsuhUq7V5134Az1oQWsiC7lNpLT4mJI86WQunK7BYmpUiHmMk2Op6OAHs0g==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
-      rollup: ^2.30.0
+      rollup: ^2.38.3
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.66.1
       commondir: 1.0.1
