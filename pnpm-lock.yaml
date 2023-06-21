@@ -20,7 +20,7 @@ specifiers:
   rollup-plugin-svelte: 7.1.0
   rollup-plugin-terser: 7.0.2
   sirv-cli: 1.0.14
-  svelte: 3.46.3
+  svelte: 3.59.2
   svelte-preprocess: 4.10.2
   tailwindcss: 2.2.19
 
@@ -43,11 +43,11 @@ devDependencies:
   rollup-plugin-livereload: 2.0.5
   rollup-plugin-postcss: 4.0.2_postcss@8.4.5
   rollup-plugin-scss: 3.0.0
-  rollup-plugin-svelte: 7.1.0_rollup@2.66.1+svelte@3.46.3
+  rollup-plugin-svelte: 7.1.0_rollup@2.66.1+svelte@3.59.2
   rollup-plugin-terser: 7.0.2_rollup@2.66.1
   sirv-cli: 1.0.14
-  svelte: 3.46.3
-  svelte-preprocess: 4.10.2_9a77c5740cdf58251fd8209a6cf19316
+  svelte: 3.59.2
+  svelte-preprocess: 4.10.2_e8797d7b7803df83192972eeaba4fb46
   tailwindcss: 2.2.19_ef48b3b8837f8a23677bffe8f9cd866d
 
 packages:
@@ -308,6 +308,12 @@ packages:
 
   /acorn/7.4.1:
     resolution: {integrity: sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+    dev: true
+
+  /acorn/8.9.0:
+    resolution: {integrity: sha512-jaVNAFBHNLXspO543WnNNPZFRtavh3skAkITqD0/2aeMkKZTN+254PyhwxFYrk3vQ1xfY+2wbesJMs/JC8/PwQ==}
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
@@ -1756,6 +1762,8 @@ packages:
     resolution: {integrity: sha512-Y5WMo7xKKq1muPsxD+KmrR8DH5auG7fBdDVueZwETwV6VytKyU9OX/ddpq2/1hp1vIPvVb4T81dKQz3BivkNLw==}
     engines: {node: '>=4'}
     dependencies:
+      '@types/keyv': 3.1.3
+      '@types/responselike': 1.0.0
       decompress-response: 3.3.0
       duplexer3: 0.1.4
       get-stream: 3.0.0
@@ -1777,6 +1785,8 @@ packages:
     engines: {node: '>=4'}
     dependencies:
       '@sindresorhus/is': 0.7.0
+      '@types/keyv': 3.1.3
+      '@types/responselike': 1.0.0
       cacheable-request: 2.1.4
       decompress-response: 3.3.0
       duplexer3: 0.1.4
@@ -1801,6 +1811,8 @@ packages:
     dependencies:
       '@sindresorhus/is': 0.14.0
       '@szmarczak/http-timer': 1.1.2
+      '@types/keyv': 3.1.3
+      '@types/responselike': 1.0.0
       cacheable-request: 6.1.0
       decompress-response: 3.3.0
       duplexer3: 0.1.4
@@ -3775,7 +3787,7 @@ packages:
       rollup-pluginutils: 2.8.2
     dev: true
 
-  /rollup-plugin-svelte/7.1.0_rollup@2.66.1+svelte@3.46.3:
+  /rollup-plugin-svelte/7.1.0_rollup@2.66.1+svelte@3.59.2:
     resolution: {integrity: sha512-vopCUq3G+25sKjwF5VilIbiY6KCuMNHP1PFvx2Vr3REBNMDllKHFZN2B9jwwC+MqNc3UPKkjXnceLPEjTjXGXg==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -3785,7 +3797,7 @@ packages:
       require-relative: 0.8.7
       rollup: 2.66.1
       rollup-pluginutils: 2.8.2
-      svelte: 3.46.3
+      svelte: 3.59.2
     dev: true
 
   /rollup-plugin-terser/7.0.2_rollup@2.66.1:
@@ -4264,7 +4276,7 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /svelte-preprocess/4.10.2_9a77c5740cdf58251fd8209a6cf19316:
+  /svelte-preprocess/4.10.2_e8797d7b7803df83192972eeaba4fb46:
     resolution: {integrity: sha512-aPpkCreSo8EL/y8kJSa1trhiX0oyAtTjlNNM7BNjRAsMJ8Yy2LtqHt0zyd4pQPXt+D4PzbO3qTjjio3kwOxDlA==}
     engines: {node: '>= 9.11.2'}
     requiresBuild: true
@@ -4313,11 +4325,11 @@ packages:
       postcss-load-config: 3.1.1
       sorcery: 0.10.0
       strip-indent: 3.0.0
-      svelte: 3.46.3
+      svelte: 3.59.2
     dev: true
 
-  /svelte/3.46.3:
-    resolution: {integrity: sha512-mTOXvv74CVQqJHqoIZDprVfRKVVmYNadXP0VKnOEA54223kLGCr1nMrifS4Zx29qMt/xRB38Eq1D7dDH/fM8fQ==}
+  /svelte/3.59.2:
+    resolution: {integrity: sha512-vzSyuGr3eEoAtT/A6bmajosJZIUWySzY2CzB3w2pgPvnkUjGqlDnsNnA0PMO+mMAhuyMul6C2uuZzY6ELSkzyA==}
     engines: {node: '>= 8'}
     dev: true
 
@@ -4432,6 +4444,7 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
+      acorn: 8.9.0
       commander: 2.20.3
       source-map: 0.7.3
       source-map-support: 0.5.20
