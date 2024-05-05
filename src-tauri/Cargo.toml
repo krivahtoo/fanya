@@ -16,7 +16,7 @@ tauri-build = { version = "1.0.0-beta.4" }
 
 [dependencies]
 dotenv = "0.15.0"
-toml = "0.5.8"
+toml = "0.8.0"
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
 tauri = { version = "1.0.0-beta.8", features = ["cli", "window-all"] }
